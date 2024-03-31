@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20sp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cifra de Cesar"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:layout_marginBottom="30sp"
+        />
+
+    <TextView
+        android:id="@+id/txtCodificar"
+        android:layout_below="@id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mensagem"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        />
+
+    <EditText
+        android:id="@+id/edtCodificar"
+        android:layout_below="@id/txtCodificar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Digite uma mensagem"
+        />
+
+    <ImageView
+        android:id="@+id/btnCodificar"
+        android:layout_below="@+id/edtCodificar"
+        android:layout_width="180sp"
+        android:layout_height="50sp"
+        android:src="@drawable/btn_codificar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20sp"
+        />
+
+
+    <TextView
+        android:id="@+id/txtMensagemCodificada"
+        android:layout_below="@id/btnCodificar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mensagem codificada"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        />
+
+    <ImageView
+        android:id="@+id/btnDecodificar"
+        android:layout_below="@+id/txtMensagemCodificada"
+        android:layout_width="180sp"
+        android:layout_height="50sp"
+        android:src="@drawable/btn_decodificar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="20sp"
+        />
+
+    <TextView
+        android:id="@+id/txtMensagemDecodificada"
+        android:layout_below="@id/btnDecodificar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Mensagem decodificada"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        />
+
+    <ImageView
+        android:id="@+id/btnVoltar"
+        android:layout_below="@+id/txtMensagemDecodificada"
+        android:layout_width="90sp"
+        android:layout_height="90sp"
+        android:src="@drawable/btn_voltar"
+        android:layout_marginTop="200sp"
+        android:layout_centerHorizontal="true"/>
+
+
+</RelativeLayout>

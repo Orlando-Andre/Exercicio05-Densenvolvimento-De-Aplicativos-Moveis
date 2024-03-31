@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20sp"
+    android:background="@color/white">
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="200sp"
+        android:src="@drawable/logo_puc"
+        />
+
+
+    <TextView
+        android:id="@+id/curso"
+        android:layout_below="@+id/img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Análise e desenvolvimento de Software"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:layout_marginTop="10sp"
+        />
+
+    <TextView
+        android:id="@+id/disciplina"
+        android:layout_below="@+id/curso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Desenvolvimento de aplicativos para dispositivos móveis"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_marginTop="10sp"
+        />
+
+    <TextView
+        android:id="@+id/nome"
+        android:layout_below="@+id/disciplina"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Orlando André Souza Neto"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="25sp"
+        android:layout_marginTop="10sp"
+        />
+
+    <TextView
+        android:id="@+id/matricula"
+        android:layout_below="@+id/nome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2022.1.0120.0014-5"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_marginTop="10sp"
+        />
+
+    <ImageView
+        android:id="@+id/btnProxima"
+        android:layout_width="120sp"
+        android:layout_height="120sp"
+        android:src="@drawable/btn"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

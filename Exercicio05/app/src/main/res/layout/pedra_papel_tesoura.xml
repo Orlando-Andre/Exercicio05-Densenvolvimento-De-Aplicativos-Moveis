@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20sp"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pedra, papel ou tesoura"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginBottom="20sp"/>
+
+    <TextView
+        android:id="@+id/txtEscolhaApp"
+        android:layout_below="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escolha do APP:"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30sp"/>
+
+    <ImageView
+        android:id="@+id/imgEscolhaApp"
+        android:layout_below="@+id/txtEscolhaApp"
+        android:layout_width="100sp"
+        android:layout_height="100sp"
+        android:src="@drawable/escolha_app"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30sp"
+        />
+
+    <TextView
+        android:id="@+id/txtOpcoes"
+        android:layout_below="@+id/imgEscolhaApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escolha uma opção abaixo:"
+        android:textSize="25sp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="30sp"/>
+
+    <LinearLayout
+        android:id="@+id/opcoes"
+        android:layout_below="@+id/txtOpcoes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        >
+
+        <ImageView
+            android:id="@+id/imgPedra"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:src="@drawable/pedra"
+            android:layout_marginBottom="5sp"
+            />
+
+        <ImageView
+            android:id="@+id/imgPapel"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:src="@drawable/papel"
+            android:layout_marginBottom="5sp"/>
+
+        <ImageView
+            android:id="@+id/imgTesoura"
+            android:layout_width="100sp"
+            android:layout_height="100sp"
+            android:src="@drawable/tesoura"
+            android:layout_marginBottom="5sp"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/btnVoltar"
+        android:layout_below="@+id/opcoes"
+        android:layout_width="90sp"
+        android:layout_height="90sp"
+        android:src="@drawable/btn_voltar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160sp"/>
+
+</RelativeLayout>
